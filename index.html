@@ -8,29 +8,26 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--- Tailwind CSS & Daisy UI CSS -->
+    <!-- Tailwind CSS & DaisyUI CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css"
       rel="stylesheet"
-      type="text/css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
       rel="stylesheet"
-      type="text/css"
     />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="res/favicon.ico" />
 
     <title>TO-DOIT</title>
   </head>
-  <body>
-    <div class="container">
+  <body class="flex flex-col min-h-screen">
+    <div class="container flex-1">
       <header>
         <h1>Todo List</h1>
         <div class="alert-message"></div>
@@ -247,12 +244,12 @@
       </div>
     </div>
 
-    <!-- JS -->
-    <script src="js/main.js"></script>
-    <!-- Add this just before closing </body> -->
-<footer class="text-center text-gray-500 text-sm mt-4 mb-2">
-  Created by <span class="font-semibold">Monish</span>
-</footer>
+    <!-- Footer always at the bottom -->
+    <footer class="w-full text-center text-gray-500 text-sm py-2 mt-auto bg-base-100">
+      Created by <span class="font-semibold">Monish</span>
+    </footer>
 
+    <script src="js/main.js"></script>
   </body>
 </html>
+
